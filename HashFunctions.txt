@@ -1,0 +1,22 @@
+// SHA256 hash of an example text
+$ echo -n "example text" | openssl dgst -sha256
+
+// MD5 hash of an example text
+$ echo -n "example text" | ./openssl dgst -MD5
+
+// Ripdem160 hash of an example text
+$ echo -n "example text" | ./openssl dgst -ripemd160
+
+// MD4 hash of an example text
+$ echo -n "example text" | ./openssl dgst -md4
+
+Further parameters: 
+-md4 
+-md5 
+-ripemd160 
+-sha
+-sha1
+-sha224
+-sha384
+-sha512
+-whirlpool
