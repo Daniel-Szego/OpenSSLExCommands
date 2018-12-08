@@ -2,3 +2,4 @@
 
 - Generate keys
 - Encrypt - Decrypt
+- Sign and verify
