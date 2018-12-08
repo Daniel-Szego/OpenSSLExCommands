@@ -1,0 +1,14 @@
+// Create SECP256K1 private key with explicit parameters for backward compatibility
+$ openssl ecparam -name secp256k1 -genkey -noout -out secp256k1-key.pem -param_enc explicit
+
+// Create public key
+$ openssl ec -in secp256k1-key.pem -pubout -out secp256k1-key-pub.pem
+
+// Show public key
+$ openssl ec -in secp256k1-key-pub.pem -pubin -text -noout
+
+// Create RSA private key
+$ openssl genrsa -des3 -out rsa-key.pem 2048
+
+// Create public key
+$ openssl rsa -in rsa-key.pem -outform PEM -pubout -out rsa-key-pub.pem
