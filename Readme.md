@@ -2,5 +2,6 @@
 
 - Generate keys
 - Encrypt - Decrypt
+  - Assymetric - Symmetric
 - Sign and verify
 - Hash functions
